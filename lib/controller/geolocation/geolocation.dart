@@ -7,7 +7,7 @@ validandoLocalizacao(double latitude, double logitude) async {
   double latRestaurante = 0.0;
   double longRestaurante = 0.0;
 //TODO: COLOCAR A URL CERTA
-  var url = Uri.parse('https://menuon-api.herokuapp.com/ ');
+  var url = Uri.parse('https://menuon-api.herokuapp.com/geolocation ');
   final response = await http.get(url);
   if (response.statusCode == 201) {
     var jsonResponse = await convert.jsonDecode(response.body);
