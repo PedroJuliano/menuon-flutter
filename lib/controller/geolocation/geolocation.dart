@@ -6,7 +6,7 @@ import 'package:geolocator/geolocator.dart';
 validandoLocalizacao(double latitude, double logitude) async {
   double latRestaurante = 0.0;
   double longRestaurante = 0.0;
-//TODO: COLOCAR A URL CERTA aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+//TODO: COLOCAR A URL CERTA a
   var url = Uri.parse('https://menuon-api.herokuapp.com/geolocation ');
   final response = await http.get(url);
   if (response.statusCode == 201) {
